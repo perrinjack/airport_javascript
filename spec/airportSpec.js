@@ -7,9 +7,13 @@ describe("Airport Class", function() {
       expect(airport).toBeInstanceOf(Airport);
     });
 
-    it("xit instructs a plane to land", function(){
+    it("it instructs a plane to land", function(){
         airport.land(plane)
-        console.log(plane.inFlight())
         expect(plane.inFlight()).toEqual(false);
       });
+
+    it("stores a plane instance in an array", function(){
+      airport.land(plane)
+      expect(airport.hangar()).toContain(plane);
+    });
   });

@@ -10,7 +10,7 @@ class Plane {
         
         console.log(this.airborne)
         this.airborne = false;
-    
-    
     }
+
+    
 }
